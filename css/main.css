@@ -1,0 +1,52 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    border-width: 0px 0px 2px 0px;
+    border-style: dashed;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    color: #352e28; 
+    font-size: 50px;
+  
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: #FEC260;
+    left: 0;
+    bottom: 3px;
+    z-index: -1;
+    transition: height 350ms;
+    
+}
+h1:hover::after{
+    height: 50%;
+}
+h3{
+    font-family: 'Sevillana', cursive; 
+    font-size: 35px;
+}
+::selection{
+    background-color:#FEC260;
+}
+.box button:hover{
+    background-color: rgb(15, 15, 15)!important;
+}
+
+
+.form-control:focus {
+    border-color: #FEC260;
+    box-shadow: 0 0 0 0.2rem rgba(254, 194, 96,0.5)
+  }
